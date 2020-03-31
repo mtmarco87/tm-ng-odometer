@@ -26,3 +26,6 @@ Thumbs.db
 # App
 src/**/*.js
 src/**/*.map
+
+yarn.lock
+package-lock.json
