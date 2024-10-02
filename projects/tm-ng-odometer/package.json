@@ -28,8 +28,8 @@
   },
   "homepage": "https://github.com/mtmarco87/ng2-odometer#readme",
   "peerDependencies": {
-    "@angular/common": "^9.1.0",
-    "@angular/core": "^9.1.0"
+    "@angular/common": "^11.1.0",
+    "@angular/core": "^11.1.0"
   },
   "dependencies": {
     "lodash": "^4.x",
