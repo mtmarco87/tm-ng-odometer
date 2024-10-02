@@ -46,6 +46,6 @@
   },
   "defaultProject": "tm-ng-odometer",
   "cli": {
-    "packageManager": "yarn"
+    "packageManager": "npm"
   }
 }
