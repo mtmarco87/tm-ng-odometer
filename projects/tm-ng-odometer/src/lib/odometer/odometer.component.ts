@@ -24,7 +24,7 @@ import {
 
 // Tm-Odometer / fixed version of the original HubSpot's Odometer
 // https://github.com/HubSpot/odometer
-const Odometer = require('tm-odometer');
+import Odometer from 'tm-odometer';
 
 @Component({
     // tslint:disable-next-line: component-selector
