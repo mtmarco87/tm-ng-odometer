@@ -1,10 +1,84 @@
-<h1>Odometer for Angular 9</h1>
-<p><tm-ng-odometer [number]="number" [theme]="'default'"></tm-ng-odometer></p> <!-- this trigger right away -->
-<p><tm-ng-odometer [number]="2000" [config]="{ auto: false }" [observable]="observable" [theme]="'default'"></tm-ng-odometer></p>
-<p><tm-ng-odometer [number]="2000" [config]="{ auto: false }" [observable]="observable" [theme]="'minimal'"></tm-ng-odometer></p>
-<p><tm-ng-odometer [number]="2000" [config]="{ auto: false }" [observable]="observable" [theme]="'car'"></tm-ng-odometer></p>
-<p><tm-ng-odometer [number]="2000" [config]="{ auto: false }" [observable]="observable" [theme]="'plaza'"></tm-ng-odometer></p>
-<p><tm-ng-odometer [number]="2000" [config]="{ auto: false }" [observable]="observable" [theme]="'slot-machine'"></tm-ng-odometer></p>
-<p><tm-ng-odometer [number]="2000" [config]="{ auto: false }" [observable]="observable" [theme]="'train-station'"></tm-ng-odometer></p>
-<p><tm-ng-odometer [number]="2000" [config]="{ auto: false }" [observable]="observable" [theme]="'digital'"></tm-ng-odometer></p>
-<p><button (click)="trigger()">Trigger</button></p>
+<div class="container">
+  <h1 class="title">TmNgOdometer Showcase</h1>
+  <p class="subtitle">An Angular library for animated numeric counters.</p>
+
+  <div class="odometer-container">
+    <!-- Default Theme -->
+    <div class="odometer-item">
+      <tm-ng-odometer
+        [number]="number"
+        [config]="{ format: '(,ddd).dd' }"
+        [theme]="'default'"
+      ></tm-ng-odometer>
+      <p class="theme-label">Default</p>
+    </div>
+
+    <!-- Minimal Theme -->
+    <div class="odometer-item">
+      <tm-ng-odometer
+        [number]="2000"
+        [config]="{ auto: false }"
+        [observable]="observable"
+        [theme]="'minimal'"
+      ></tm-ng-odometer>
+      <p class="theme-label">Minimal</p>
+    </div>
+
+    <!-- Car Theme -->
+    <div class="odometer-item">
+      <tm-ng-odometer
+        [number]="2000"
+        [config]="{ auto: false }"
+        [observable]="observable"
+        [theme]="'car'"
+      ></tm-ng-odometer>
+      <p class="theme-label">Car</p>
+    </div>
+
+    <!-- Plaza Theme -->
+    <div class="odometer-item">
+      <tm-ng-odometer
+        [number]="2000"
+        [config]="{ auto: false }"
+        [observable]="observable"
+        [theme]="'plaza'"
+      ></tm-ng-odometer>
+      <p class="theme-label">Plaza</p>
+    </div>
+
+    <!-- Slot Machine Theme -->
+    <div class="odometer-item">
+      <tm-ng-odometer
+        [number]="2000"
+        [config]="{ auto: false }"
+        [observable]="observable"
+        [theme]="'slot-machine'"
+      ></tm-ng-odometer>
+      <p class="theme-label">Slot Machine</p>
+    </div>
+
+    <!-- Train Station Theme -->
+    <div class="odometer-item">
+      <tm-ng-odometer
+        [number]="2000"
+        [config]="{ auto: false }"
+        [observable]="observable"
+        [theme]="'train-station'"
+      ></tm-ng-odometer>
+      <p class="theme-label">Train Station</p>
+    </div>
+
+    <!-- Digital Theme -->
+    <div class="odometer-item">
+      <tm-ng-odometer
+        [number]="2000"
+        [config]="{ auto: false }"
+        [observable]="observable"
+        [theme]="'digital'"
+      ></tm-ng-odometer>
+      <p class="theme-label">Digital</p>
+    </div>
+  </div>
+
+  <button class="trigger-button" (click)="trigger()">Trigger</button>
+</div>

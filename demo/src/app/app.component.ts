@@ -1,22 +1,24 @@
-import { Component } from '@angular/core';
-import { Observable, Observer } from 'rxjs';
-import { share } from 'rxjs/operators';
+import { Component } from "@angular/core";
+import { Observable, Observer } from "rxjs";
+import { share } from "rxjs/operators";
 
 @Component({
-    selector: 'app',
-    styleUrls: ['app.component.css'],
-    templateUrl: 'app.component.html'
+    selector: "app",
+    styleUrls: ["app.component.css"],
+    templateUrl: "app.component.html",
 })
 export class AppComponent {
-    public number: number = 3000;
+    public number: number = 3000.25;
     public observable: Observable<boolean>;
     private observer: Observer<boolean>;
 
     constructor() {
-        this.observable = new Observable<boolean>((observer: any) => this.observer = observer).pipe(share());
+        this.observable = new Observable<boolean>(
+            (observer: any) => (this.observer = observer)
+        ).pipe(share());
 
         // For auto mode
-        setTimeout(() => this.number += this.number, 5000); // Update on 5 seconds
+        setTimeout(() => (this.number += 2999.75), 5000); // Update on 5 seconds
     }
 
     public trigger() {
