@@ -14,7 +14,7 @@
    - [Configuration](#configuration)
 5. [Development](#development)
    - [Demo](#demo)
-   - [Planned Improvements](#planned-improvements)
+   - [Improvements](#improvements)
 6. [Acknowledgments](#acknowledgments)
 7. [Support](#support)
 8. [License](#license)
