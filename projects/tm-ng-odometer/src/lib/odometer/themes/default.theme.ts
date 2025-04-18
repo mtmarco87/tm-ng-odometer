@@ -1,5 +1,5 @@
 /**
- * Created by Jose Andres on 02.23.17
+ * Created by Jose Andres on 2017/02/23
  */
 
 export const DEFAULT_THEME = `
