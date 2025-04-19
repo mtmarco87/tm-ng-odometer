@@ -6,18 +6,19 @@
 
 1. [Project Overview](#project-overview)
 2. [Features](#features)
-3. [Environment Setup](#environment-setup)
+3. [Screenshots](#screenshots)
+4. [Environment Setup](#environment-setup)
    - [Prerequisites](#prerequisites)
    - [Setup Steps](#setup-steps)
-4. [Usage](#usage)
+5. [Usage](#usage)
    - [How to Use](#how-to-use)
    - [Configuration](#configuration)
-5. [Development](#development)
+6. [Development](#development)
    - [Demo](#demo)
    - [Improvements](#improvements)
-6. [Acknowledgments](#acknowledgments)
-7. [Support](#support)
-8. [License](#license)
+7. [Acknowledgments](#acknowledgments)
+8. [Support](#support)
+9. [License](#license)
 
 ## Project Overview
 
@@ -30,6 +31,16 @@
 - **Themes**: Supports various themes and animation styles.
 - **Integration**: Easy integration with Angular applications.
 - **Modes**: Manual and automatic triggering modes for odometer.
+
+## Screenshots
+
+Here you can see the TmNgOdometer in action:
+
+https://github.com/user-attachments/assets/4c83e4a0-d87a-4056-8f26-4b012508a80e
+
+### Demo
+
+![Demo Animation](assets/screenshots/tm-ng-odometer.gif)
 
 ## Environment Setup
 
