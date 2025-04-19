@@ -2,11 +2,11 @@
   "name": "tm-ng-odometer",
   "description": "TmNgOdometer: An Angular library for animated numeric counters with precise decimal handling, customizable themes, and odometer-style animations.",
   "authors": [
-    "Marco Trinastich <mt.marco87@gmail.com",
+    "Marco Trinastich <mt.marco87@gmail.com>",
     "Jose Andres <jmandreslopez@gmail.com>"
   ],
   "license": "MIT",
-  "version": "1.11.0",
+  "version": "1.12.0",
   "keywords": [
     "tm-ng-odometer",
     "tm-odometer",
