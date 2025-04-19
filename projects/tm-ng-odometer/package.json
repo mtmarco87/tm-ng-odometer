@@ -1,38 +1,36 @@
 {
   "name": "tm-ng-odometer",
-  "description": "Odometer for Angular 9",
+  "description": "TmNgOdometer: An Angular library for animated numeric counters with precise decimal handling, customizable themes, and odometer-style animations.",
   "authors": [
     "Marco Trinastich <mt.marco87@gmail.com",
     "Jose Andres <jmandreslopez@gmail.com>"
   ],
   "license": "MIT",
-  "version": "1.1.8",
+  "version": "1.4.0",
   "keywords": [
-    "hubspot",
-    "odometer",
-    "tm-odometer",
     "tm-ng-odometer",
+    "tm-odometer",
+    "animated-counter",
+    "odometer",
     "hubspot",
-    "angular",
-    "angular8",
-    "angular9",
-    "fixed odometer",
-    "odometer fixed"
+    "angular"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mtmarco87/ng2-odometer"
+    "url": "https://github.com/mtmarco87/tm-ng-odometer"
   },
   "bugs": {
-    "url": "https://github.com/mtmarco87/ng2-odometer/issues"
+    "url": "https://github.com/mtmarco87/tm-ng-odometer/issues"
   },
-  "homepage": "https://github.com/mtmarco87/ng2-odometer#readme",
+  "homepage": "https://github.com/mtmarco87/tm-ng-odometer#readme",
   "peerDependencies": {
-    "@angular/common": "^9.1.0",
-    "@angular/core": "^9.1.0"
+    "@angular/common": "^10.2.5",
+    "@angular/core": "^10.2.5",
+    "rxjs": "^6.5.4"
   },
   "dependencies": {
     "lodash": "^4.x",
-    "tm-odometer": "^1.x"
+    "tm-odometer": "^1.x",
+    "tslib": "^2.0.0"
   }
 }

@@ -1,29 +1,28 @@
 /**
- * Created by Jose Andres on 02.23.17
+ * Created by Jose Andres on 2017/02/23
  */
 
 export interface OdometerModel {
-    MAX_VALUES: number;
-    digits: Array<HTMLElement>;
+  MAX_VALUES: number;
+  digits: Array<HTMLElement>;
+  el: HTMLElement;
+  format: {
+    precision: number;
+    radix: any;
+    repeating: string;
+  };
+  inside: HTMLElement;
+  options: {
     el: HTMLElement;
-    format: {
-        precision: number;
-        radix: any;
-        repeating: string;
-    };
-    inside: HTMLElement;
-    options: {
-        el: HTMLElement;
-        duration: number;
-        theme: string
-        format: string;
-        animation: string;
-    };
-    ribbons: any;
-    transitionEndBound: boolean;
-    value: 0;
+    duration: number;
+    theme: string;
+    format: string;
+    animation: string;
+  };
+  ribbons: any;
+  transitionEndBound: boolean;
+  value: 0;
 
-    // Methods
-    // tslint:disable-next-line: variable-name
-    update(number: number): void;
+  // Methods
+  update(number: number): void;
 }
