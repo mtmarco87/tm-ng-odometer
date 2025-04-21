@@ -1,6 +1,8 @@
 /**
- * Modified by Marco Trinastich on 2025/04/19
- * Created by Jose Andres on 2017/06/15
+ * Created: 2017-06-15 by Jose Andres
+ * Modified:
+ *   - 2020-04-12 by Marco Trinastich: Migrated to Angular 9 and enhanced decimal precision handling using the updated tm-odometer library.
+ *   - 2025-04-19 by Marco Trinastich: Upgraded to the latest Angular version, optimized performance, and improved code quality.
  */
 
 import {
@@ -15,6 +17,7 @@ import {
   ElementRef,
 } from "@angular/core";
 import { Observable, Subscription } from "rxjs";
+import { Utilities } from "../utils/utilities";
 import { OdometerModel } from "./odometer.model";
 import { TmNgOdometerConfig, TmNgOdometerConfigModel } from "./odometer.config";
 import {
@@ -27,11 +30,8 @@ import {
   TRAIN_STATION_THEME,
 } from "./themes";
 
-// Lodash
-const lodash = require("lodash");
-
 // TmOdometer (https://github.com/mtmarco87/tm-odometer.git)
-const Odometer = require("tm-odometer") as typeof import("tm-odometer");
+import TmOdometer from "tm-odometer";
 
 @Component({
   // tslint:disable-next-line: component-selector
@@ -96,10 +96,10 @@ export class TmNgOdometerComponent
   // Start Odometer
   private initOdometer() {
     if (
-      !lodash.isUndefined(this.container) &&
-      typeof Odometer !== "undefined"
+      !Utilities.isUndefined(this.container) &&
+      typeof TmOdometer !== "undefined"
     ) {
-      this.odometer = new Odometer({
+      this.odometer = new TmOdometer({
         el: this.container.nativeElement,
         animation: this.config.animation,
         value: this.config.value,
@@ -108,50 +108,50 @@ export class TmNgOdometerComponent
         theme: this.config.theme,
       });
 
-      if (!lodash.isUndefined(this.number) && this.config.auto) {
+      if (!Utilities.isUndefined(this.number) && this.config.auto) {
         this.odometer.update(this.number);
       }
     }
   }
 
   private initConfig() {
-    this.config = lodash.defaults(this.config, new TmNgOdometerConfig());
+    this.config = Utilities.defaults(this.config, new TmNgOdometerConfig());
 
     // Animation
-    if (!lodash.isUndefined(this.animation)) {
+    if (!Utilities.isUndefined(this.animation)) {
       this.config.animation = this.animation;
     }
 
     // Format
-    if (!lodash.isUndefined(this.format)) {
+    if (!Utilities.isUndefined(this.format)) {
       this.config.format = this.format;
     }
 
     // Theme
-    if (!lodash.isUndefined(this.theme)) {
-      this.config.theme = !lodash.includes(this.themes, this.theme)
+    if (!Utilities.isUndefined(this.theme)) {
+      this.config.theme = !Utilities.includes(this.themes, this.theme)
         ? "default"
         : this.theme;
     }
 
     // Value
-    if (!lodash.isUndefined(this.value)) {
+    if (!Utilities.isUndefined(this.value)) {
       this.config.value = this.value;
     }
 
     // Duration
-    if (!lodash.isUndefined(this.duration)) {
+    if (!Utilities.isUndefined(this.duration)) {
       this.config.duration = this.duration;
     }
 
     // Auto
-    if (!lodash.isUndefined(this.auto)) {
+    if (!Utilities.isUndefined(this.auto)) {
       this.config.auto = this.auto;
     }
 
     // Validate theme. If not part of the
     // available themes array, use the default
-    if (!lodash.includes(this.themes, this.config.theme)) {
+    if (!Utilities.includes(this.themes, this.config.theme)) {
       this.config.theme = "default";
     }
   }
@@ -162,9 +162,9 @@ export class TmNgOdometerComponent
 
   public ngOnInit() {
     // Bind Observable
-    if (!lodash.isUndefined(this.observable) && !this.config.auto) {
+    if (!Utilities.isUndefined(this.observable) && !this.config.auto) {
       this.subscription = this.observable.subscribe((trigger: boolean) => {
-        if (!lodash.isUndefined(trigger) && trigger) {
+        if (!Utilities.isUndefined(trigger) && trigger) {
           this.odometer.update(this.number);
         }
       });
@@ -176,15 +176,15 @@ export class TmNgOdometerComponent
   }
 
   public ngOnDestroy() {
-    if (!lodash.isUndefined(this.subscription)) {
+    if (!Utilities.isUndefined(this.subscription)) {
       this.subscription.unsubscribe();
     }
   }
 
   public ngOnChanges() {
     if (
-      !lodash.isUndefined(this.number) &&
-      !lodash.isUndefined(this.odometer) &&
+      !Utilities.isUndefined(this.number) &&
+      !Utilities.isUndefined(this.odometer) &&
       this.config.auto
     ) {
       this.odometer.update(this.number);

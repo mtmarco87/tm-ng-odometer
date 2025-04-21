@@ -1,5 +1,5 @@
 /**
- * Created by Jose Andres on 2017/02/23
+ * Created: 2017-02-23 by Jose Andres
  */
 
 export const MINIMAL_THEME = `
@@ -7,27 +7,18 @@ export const MINIMAL_THEME = `
     .odometer.odometer-theme-minimal {
         display: inline-block;
         vertical-align: middle;
-        *vertical-align: auto;
-        *zoom: 1;
-        *display: inline;
         position: relative;
     }
     .odometer.odometer-auto-theme .odometer-digit,
     .odometer.odometer-theme-minimal .odometer-digit {
         display: inline-block;
         vertical-align: middle;
-        *vertical-align: auto;
-        *zoom: 1;
-        *display: inline;
         position: relative;
     }
     .odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer,
     .odometer.odometer-theme-minimal .odometer-digit .odometer-digit-spacer {
         display: inline-block;
         vertical-align: middle;
-        *vertical-align: auto;
-        *zoom: 1;
-        *display: inline;
         visibility: hidden;
     }
     .odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner,
