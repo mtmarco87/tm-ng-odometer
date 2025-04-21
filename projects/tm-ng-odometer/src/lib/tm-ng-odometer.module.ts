@@ -1,6 +1,7 @@
 /**
- * Modified by Marco Trinastich on 2020/03/31
- * Created by Jose Andres on 2017/02/23
+ * Created: 2017-02-23 by Jose Andres
+ * Modified:
+ *   - 2020-03-31 by Marco Trinastich
  */
 
 import { NgModule, ModuleWithProviders } from "@angular/core";

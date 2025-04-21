@@ -2,8 +2,7 @@
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
   "dest": "../../dist/tm-ng-odometer",
   "allowedNonPeerDependencies": [
-    "tm-odometer",
-    "lodash"
+    "tm-odometer"
   ],
   "lib": {
     "entryFile": "src/public-api.ts"

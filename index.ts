@@ -1,5 +1,5 @@
 /**
- * Created by Jose Andres on 02.19.17
+ * Created: 2017-02-19 by Jose Andres
  */
 
-export * from './dist/odometer';
+export * from "./dist/odometer";

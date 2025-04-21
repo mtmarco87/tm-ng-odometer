@@ -1,5 +1,5 @@
 /**
- * Created by Jose Andres on 2017/02/23
+ * Created: 2017-02-23 by Jose Andres
  */
 
 export const CAR_THEME =
@@ -9,27 +9,18 @@ export const CAR_THEME =
     .odometer.odometer-theme-car {
         display: inline-block;
         vertical-align: middle;
-        *vertical-align: auto;
-        *zoom: 1;
-        *display: inline;
         position: relative;
     }
     .odometer.odometer-auto-theme .odometer-digit,
     .odometer.odometer-theme-car .odometer-digit {
         display: inline-block;
         vertical-align: middle;
-        *vertical-align: auto;
-        *zoom: 1;
-        *display: inline;
         position: relative;
     }
     .odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer,
     .odometer.odometer-theme-car .odometer-digit .odometer-digit-spacer {
         display: inline-block;
         vertical-align: middle;
-        *vertical-align: auto;
-        *zoom: 1;
-        *display: inline;
         visibility: hidden;
     }
     .odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner,
