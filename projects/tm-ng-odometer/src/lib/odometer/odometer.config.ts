@@ -1,5 +1,5 @@
 /**
- * Created by Jose Andres on 2017/06/15
+ * Created: 2017-06-15 by Jose Andres
  */
 
 export interface TmNgOdometerConfigModel {

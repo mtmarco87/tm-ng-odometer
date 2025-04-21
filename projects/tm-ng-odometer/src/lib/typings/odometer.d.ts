@@ -1,5 +1,5 @@
 /**
- * Created by Marco Trinastich 2025/04/19
+ * Created: 2025-04-19 by Marco Trinastich
  */
 
 declare module "tm-odometer" {
@@ -36,5 +36,5 @@ declare module "tm-odometer" {
     update(value: number): void;
   }
 
-  export = TmOdometer;
+  export default TmOdometer;
 }
