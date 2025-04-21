@@ -68,8 +68,8 @@ export class TmNgOdometerComponent
 {
   private subscription: Subscription;
   private odometer: OdometerModel;
-  @ViewChild("container", { read: ElementRef, static: true })
-  container: ElementRef;
+  @ViewChild("container", { read: ElementRef, static: false })
+  container: ElementRef; // Using static: false for better compatibility in complex applications
   @Input() number: number; // Required
   @Input() config: TmNgOdometerConfigModel = {};
   @Input() observable: Observable<boolean> = undefined;
