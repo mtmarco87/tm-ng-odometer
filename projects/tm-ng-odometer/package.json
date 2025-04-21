@@ -7,7 +7,7 @@
     "Jose Andres <jmandreslopez@gmail.com>"
   ],
   "license": "MIT",
-  "version": "1.13.0",
+  "version": "1.14.0",
   "keywords": [
     "tm-ng-odometer",
     "angular",
@@ -30,8 +30,8 @@
   },
   "homepage": "https://github.com/mtmarco87/tm-ng-odometer#readme",
   "peerDependencies": {
-    "@angular/common": "^13.4.0",
-    "@angular/core": "^13.4.0",
+    "@angular/common": "^14.3.0",
+    "@angular/core": "^14.3.0",
     "rxjs": "^6.5.4"
   },
   "dependencies": {
