@@ -34,7 +34,6 @@ import {
 import TmOdometer from "tm-odometer";
 
 @Component({
-  // tslint:disable-next-line: component-selector
   selector: "tm-ng-odometer",
   encapsulation: ViewEncapsulation.None,
   styles: [
@@ -62,6 +61,7 @@ import TmOdometer from "tm-odometer";
     `,
   ],
   template: `<div #container></div>`,
+  standalone: false,
 })
 export class TmNgOdometerComponent
   implements OnInit, OnDestroy, OnChanges, AfterViewInit
