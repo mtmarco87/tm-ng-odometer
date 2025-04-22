@@ -3,7 +3,7 @@
   "description": "TmNgOdometer: An Angular library for animated numeric counters with precise decimal handling, customizable themes, and odometer-style animations.",
   "author": "Marco Trinastich <mt.marco87@gmail.com>",
   "license": "MIT",
-  "version": "1.18.0",
+  "version": "1.19.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/mtmarco87/tm-ng-odometer"
@@ -21,20 +21,20 @@
     "lint": "ng lint"
   },
   "dependencies": {
-    "@angular/core": "^18.2.13",
-    "@angular/common": "^18.2.13",
+    "@angular/common": "^19.2.7",
+    "@angular/core": "^19.2.7",
     "rxjs": "^7.8.1",
     "tm-odometer": "^1.x",
     "tslib": "^2.0.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^18.2.18",
-    "@angular/cli": "^18.2.18",
-    "@angular/compiler-cli": "^18.2.13",
-    "@angular/language-service": "^18.2.13",
-    "@angular/platform-browser-dynamic": "^18.2.13",
+    "@angular-devkit/build-angular": "^19.2.8",
+    "@angular/cli": "^19.2.8",
+    "@angular/compiler-cli": "^19.2.7",
+    "@angular/language-service": "^19.2.7",
+    "@angular/platform-browser-dynamic": "^19.2.7",
     "@types/jasmine": "~3.8.0",
-    "@types/node": "^13.9.8",
+    "@types/node": "^22.14.1",
     "jasmine-core": "~3.8.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~6.4.4",
@@ -42,8 +42,8 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.7.0",
-    "ng-packagr": "^18.2.1",
+    "ng-packagr": "^19.2.2",
     "tslint": "~6.1.0",
-    "typescript": "^5.4.5"
+    "typescript": "^5.8.3"
   }
 }

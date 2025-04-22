@@ -6,6 +6,7 @@ import { share } from "rxjs/operators";
     selector: "app",
     styleUrls: ["app.component.css"],
     templateUrl: "app.component.html",
+    standalone: false
 })
 export class AppComponent {
     public number: number = 3000.25;
