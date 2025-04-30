@@ -13,8 +13,10 @@
 5. [Usage](#usage)
    - [How to Use](#how-to-use)
    - [Configuration](#configuration)
-6. [Development](#development)
+   - [Modes](#modes)
    - [Demo](#demo)
+6. [Development](#development)
+   - [Setup for Development](#setup-for-development)
    - [Improvements](#improvements)
 7. [Acknowledgments](#acknowledgments)
 8. [Support](#support)
@@ -44,7 +46,7 @@ See the TmNgOdometer in action below:
 
 ### Full FPS Video
 
-[![Full FPS Video](assets/screenshots/tm-ng-odometer.png)](https://github.com/user-attachments/assets/4c83e4a0-d87a-4056-8f26-4b012508a80e)
+[![Full FPS Video](assets/screenshots/tm-ng-odometer.png)](https://github.com/user-attachments/assets/d485c6db-068c-43b9-b923-7c4efeef2462)
 
 > _Click to watch the high-quality video with smooth animations and detailed UI/UX._
 
@@ -52,8 +54,8 @@ See the TmNgOdometer in action below:
 
 ### Prerequisites
 
-- Node.js and npm installed on your system.
-- Angular CLI version 9.1.0 or higher.
+- [Node.js/NPM](https://nodejs.org/)
+- Angular CLI version 19.2.7 or higher.
 
 ### Setup Steps
 
@@ -195,8 +197,6 @@ export class MainElementComponent {
 | **Use Case**          | Simple scenarios where updates are automatic. | Advanced scenarios requiring controlled updates. |
 | **Trigger Mechanism** | Changes to `number` input.                    | Emission from `observable`.                      |
 
-## Development
-
 ### Demo
 
 A demo project is included in the `demo` folder. To run the demo:
@@ -221,6 +221,38 @@ A demo project is included in the `demo` folder. To run the demo:
 
 4. Open [http://localhost:4200](http://localhost:4200) in your browser to view the demo.
 
+## Development
+
+### Setup for Development
+
+1. **Prerequisites**:
+
+   - [Node.js/NPM](https://nodejs.org/)
+
+2. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/mtmarco87/tm-ng-odometer.git
+   cd tm-ng-odometer
+   ```
+
+3. **Install Dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+4. **Build the Library**:
+
+   ```bash
+   npm run build
+   ```
+
+5. **Build Package**:
+   ```bash
+   npm run pack
+   ```
+
 ### Improvements
 
 - Add unit tests for the library and demo.
@@ -229,7 +261,7 @@ A demo project is included in the `demo` folder. To run the demo:
 
 ## Acknowledgments
 
-- **TmOdometer** by Marco Trinastich: [GitHub](https://github.com/mtmarco87/odometer/)/[NPM](https://www.npmjs.com/package/tm-odometer)
+- **TmOdometer** by Marco Trinastich: [GitHub](https://github.com/mtmarco87/tm-odometer/)/[NPM](https://www.npmjs.com/package/tm-odometer)
 - **HubSpot's Odometer**: [GitHub](http://github.hubspot.com/odometer/docs/welcome/)
 - **Ng2Odometer** by Jose Andres: [NPM](https://www.npmjs.com/package/ng2-odometer/)
 

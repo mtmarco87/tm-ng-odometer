@@ -2,11 +2,14 @@
   "name": "tm-ng-odometer-lib",
   "description": "TmNgOdometer: An Angular library for animated numeric counters with precise decimal handling, customizable themes, and odometer-style animations.",
   "author": "Marco Trinastich <mt.marco87@gmail.com>",
+  "contributors": [
+    "Jose Andres <jmandreslopez@gmail.com>"
+  ],
   "license": "MIT",
-  "version": "1.19.0",
+  "version": "1.19.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mtmarco87/tm-ng-odometer"
+    "url": "git+https://github.com/mtmarco87/tm-ng-odometer.git"
   },
   "bugs": {
     "url": "https://github.com/mtmarco87/tm-ng-odometer/issues"
@@ -15,16 +18,19 @@
   "private": true,
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "build": "node scripts/npm-utils.js prebuild && ng build --configuration production",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "link": "node scripts/npm-utils.js link",
+    "pack": "node scripts/npm-utils.js pack",
+    "publish": "node scripts/npm-utils.js publish",
+    "clean": "rimraf dist"
   },
   "dependencies": {
     "@angular/common": "^19.2.7",
     "@angular/core": "^19.2.7",
     "rxjs": "^7.8.1",
-    "tm-odometer": "^1.x",
+    "tm-odometer": "^2.x",
     "tslib": "^2.0.0"
   },
   "devDependencies": {

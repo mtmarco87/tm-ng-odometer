@@ -18,8 +18,7 @@ import {
 } from "@angular/core";
 import { Observable, Subscription } from "rxjs";
 import { Utilities } from "../utils/utilities";
-import { OdometerModel } from "./odometer.model";
-import { TmNgOdometerConfig, TmNgOdometerConfigModel } from "./odometer.config";
+import { TmNgOdometerConfig } from "./tm-ng-odometer.config";
 import {
   CAR_THEME,
   DEFAULT_THEME,
@@ -67,15 +66,15 @@ export class TmNgOdometerComponent
   implements OnInit, OnDestroy, OnChanges, AfterViewInit
 {
   private subscription: Subscription;
-  private odometer: OdometerModel;
+  private odometer: TmOdometer;
   @ViewChild("container", { read: ElementRef, static: false })
   container: ElementRef; // Using static: false for better compatibility in complex applications
   @Input() number: number; // Required
-  @Input() config: TmNgOdometerConfigModel = {};
+  @Input() config: TmNgOdometerConfig = {};
   @Input() observable: Observable<boolean> = undefined;
 
   // Individual configuration attributes
-  @Input() animation: string = undefined;
+  @Input() animation: "slide" | "count" = undefined;
   @Input() format: string = undefined;
   @Input() theme: string = undefined;
   @Input() value: number = undefined;

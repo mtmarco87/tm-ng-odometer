@@ -6,7 +6,7 @@
 
 import { NgModule, ModuleWithProviders } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { TmNgOdometerComponent } from "./odometer/odometer.component";
+import { TmNgOdometerComponent } from "./tm-ng-odometer/tm-ng-odometer.component";
 
 @NgModule({
   imports: [CommonModule],
